@@ -1,6 +1,14 @@
 import { Layout } from '@/components/layout/Layout';
+import { RecipeDisplay } from '@/components/recipe/RecipeDisplay';
+import { parseRecipeFile } from '@/services/recipeParser';
+import recipeContent from '../recipes/chocolate-chip-cookies.md?raw';
 
 function App() {
+  const recipe = parseRecipeFile(
+    recipeContent,
+    'recipes/chocolate-chip-cookies.md'
+  );
+
   return (
     <Layout
       sidebar={
@@ -11,14 +19,7 @@ function App() {
         </div>
       }
     >
-      <div className="flex min-h-[400px] flex-col items-center justify-center text-center">
-        <h2 className="mb-4 text-3xl font-bold tracking-tight">
-          Select a recipe to get started
-        </h2>
-        <p className="text-muted-foreground">
-          Choose a recipe from the sidebar to view its details.
-        </p>
-      </div>
+      <RecipeDisplay recipe={recipe} />
     </Layout>
   );
 }
