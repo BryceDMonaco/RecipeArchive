@@ -1,26 +1,25 @@
-import { useState } from 'react';
-import './App.css';
+import { Layout } from '@/components/layout/Layout';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <h1>Recipe Archive</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
+    <Layout
+      sidebar={
+        <div className="flex flex-col gap-2">
+          <p className="text-sm text-muted-foreground">
+            Welcome to Recipe Archive
           </p>
         </div>
-        <p className="read-the-docs">
-          Vite + React + TypeScript starter template
+      }
+    >
+      <div className="flex min-h-[400px] flex-col items-center justify-center text-center">
+        <h2 className="mb-4 text-3xl font-bold tracking-tight">
+          Select a recipe to get started
+        </h2>
+        <p className="text-muted-foreground">
+          Choose a recipe from the sidebar to view its details.
         </p>
       </div>
-    </>
+    </Layout>
   );
 }
 
