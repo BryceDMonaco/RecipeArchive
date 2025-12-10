@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { RecipeList } from '@/components/recipe/RecipeList';
 import { RecipeMetadata } from '@/types/recipe';
 
@@ -26,7 +27,11 @@ const mockRecipes: RecipeMetadata[] = [
 
 describe('RecipeList Component', () => {
   it('should render all recipe titles', () => {
-    render(<RecipeList recipes={mockRecipes} />);
+    render(
+      <MemoryRouter>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
 
     expect(screen.getByText('Chocolate Chip Cookies')).toBeInTheDocument();
     expect(screen.getByText('Spaghetti Carbonara')).toBeInTheDocument();
@@ -34,7 +39,11 @@ describe('RecipeList Component', () => {
   });
 
   it('should render correct number of recipe items', () => {
-    const { container } = render(<RecipeList recipes={mockRecipes} />);
+    const { container } = render(
+      <MemoryRouter>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
 
     // Each recipe has a title
     const recipeTitles = container.querySelectorAll('h3');
@@ -42,7 +51,11 @@ describe('RecipeList Component', () => {
   });
 
   it('should display recipe tags', () => {
-    render(<RecipeList recipes={mockRecipes} />);
+    render(
+      <MemoryRouter>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
 
     expect(screen.getByText('dessert')).toBeInTheDocument();
     expect(screen.getByText('baking')).toBeInTheDocument();
@@ -51,7 +64,11 @@ describe('RecipeList Component', () => {
   });
 
   it('should show "No recipes found" message when list is empty', () => {
-    render(<RecipeList recipes={[]} />);
+    render(
+      <MemoryRouter>
+        <RecipeList recipes={[]} />
+      </MemoryRouter>
+    );
 
     expect(screen.getByText('No recipes found')).toBeInTheDocument();
   });
@@ -66,15 +83,45 @@ describe('RecipeList Component', () => {
       },
     ];
 
-    render(<RecipeList recipes={recipesWithoutTags} />);
+    render(
+      <MemoryRouter>
+        <RecipeList recipes={recipesWithoutTags} />
+      </MemoryRouter>
+    );
 
     expect(screen.getByText('Test Recipe')).toBeInTheDocument();
   });
 
   it('should apply hover styling classes', () => {
-    const { container } = render(<RecipeList recipes={mockRecipes} />);
+    const { container } = render(
+      <MemoryRouter>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
 
     const cards = container.querySelectorAll('[class*="hover"]');
     expect(cards.length).toBeGreaterThan(0);
+  });
+
+  it('should render recipe items as links', () => {
+    render(
+      <MemoryRouter>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
+
+    const links = document.querySelectorAll('a[href*="/recipe/"]');
+    expect(links.length).toBe(3);
+  });
+
+  it('should highlight active recipe', () => {
+    const { container } = render(
+      <MemoryRouter initialEntries={['/recipe/greek-salad']}>
+        <RecipeList recipes={mockRecipes} />
+      </MemoryRouter>
+    );
+
+    const activeCard = container.querySelector('[class*="bg-blue-50"]');
+    expect(activeCard).toBeInTheDocument();
   });
 });
