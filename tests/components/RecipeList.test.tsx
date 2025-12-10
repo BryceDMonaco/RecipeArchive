@@ -70,7 +70,8 @@ describe('RecipeList Component', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('No recipes found')).toBeInTheDocument();
+    expect(screen.getByText('No Recipes Found')).toBeInTheDocument();
+    expect(screen.getByText(/No recipes match your current search or filter criteria/i)).toBeInTheDocument();
   });
 
   it('should render recipe without tags gracefully', () => {

@@ -1,6 +1,8 @@
 import { RecipeMetadata } from '@/types/recipe';
 import { Card } from '@/components/ui/card';
 import { Link, useLocation } from 'react-router-dom';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { Search } from 'lucide-react';
 
 interface RecipeListProps {
   recipes: RecipeMetadata[];
@@ -9,9 +11,11 @@ interface RecipeListProps {
 export function RecipeList({ recipes }: RecipeListProps) {
   if (recipes.length === 0) {
     return (
-      <div className="p-4 text-center text-gray-500">
-        <p>No recipes found</p>
-      </div>
+      <EmptyState
+        title="No Recipes Found"
+        message="No recipes match your current search or filter criteria. Try adjusting your filters or search terms."
+        icon={<Search className="h-16 w-16" />}
+      />
     );
   }
 
