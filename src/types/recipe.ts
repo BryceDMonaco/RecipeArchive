@@ -13,6 +13,10 @@ export interface RecipeMetadata {
   tags: string[];
 }
 
+export interface SearchableRecipeMetadata extends RecipeMetadata {
+  content: string;
+}
+
 export interface RecipeFrontmatter {
   title?: string;
   tags?: string | string[];
