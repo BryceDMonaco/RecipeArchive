@@ -1,6 +1,8 @@
 import { Layout } from '@/components/layout/Layout';
 import { RecipeDisplay } from '@/components/recipe/RecipeDisplay';
+import { RecipeList } from '@/components/recipe/RecipeList';
 import { parseRecipeFile } from '@/services/recipeParser';
+import recipeManifest from 'virtual:recipe-manifest';
 import recipeContent from '../recipes/chocolate-chip-cookies.md?raw';
 
 function App() {
@@ -12,11 +14,7 @@ function App() {
   return (
     <Layout
       sidebar={
-        <div className="flex flex-col gap-2">
-          <p className="text-sm text-muted-foreground">
-            Welcome to Recipe Archive
-          </p>
-        </div>
+        <RecipeList recipes={recipeManifest} />
       }
     >
       <RecipeDisplay recipe={recipe} />

@@ -7,10 +7,10 @@ export interface Recipe {
 }
 
 export interface RecipeMetadata {
+  filename: string;
   slug: string;
   title: string;
   tags: string[];
-  filePath: string;
 }
 
 export interface RecipeFrontmatter {
