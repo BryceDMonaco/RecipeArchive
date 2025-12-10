@@ -41,7 +41,11 @@ export function recipeManifestPlugin(): Plugin {
   };
 }
 
-function generateRecipeManifest(recipesDir: string): RecipeMetadata[] {
+interface SearchableRecipeMetadata extends RecipeMetadata {
+  content: string;
+}
+
+function generateRecipeManifest(recipesDir: string): SearchableRecipeMetadata[] {
   if (!fs.existsSync(recipesDir)) {
     console.warn(`Recipes directory not found: ${recipesDir}`);
     return [];
@@ -50,10 +54,10 @@ function generateRecipeManifest(recipesDir: string): RecipeMetadata[] {
   const files = fs.readdirSync(recipesDir);
   const recipeFiles = files.filter(file => file.endsWith('.md'));
 
-  const manifest: RecipeMetadata[] = recipeFiles.map(filename => {
+  const manifest: SearchableRecipeMetadata[] = recipeFiles.map(filename => {
     const filePath = path.join(recipesDir, filename);
     const fileContents = fs.readFileSync(filePath, 'utf-8');
-    const { data } = matter(fileContents);
+    const { data, content } = matter(fileContents);
 
     // Extract slug from filename
     const slug = filename.replace('.md', '');
@@ -71,6 +75,7 @@ function generateRecipeManifest(recipesDir: string): RecipeMetadata[] {
       slug,
       title: data.title || slug,
       tags,
+      content: content.trim(),
     };
   });
 

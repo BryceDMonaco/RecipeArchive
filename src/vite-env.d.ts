@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 declare module 'virtual:recipe-manifest' {
-  import { RecipeMetadata } from './types/recipe';
-  const manifest: RecipeMetadata[];
+  import { SearchableRecipeMetadata } from './types/recipe';
+  const manifest: SearchableRecipeMetadata[];
   export default manifest;
 }
