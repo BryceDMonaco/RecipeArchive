@@ -61,3 +61,85 @@
     line-height: 1.6;
   }
 }
+
+/* Print Styles */
+@media print {
+  /* Hide UI chrome and navigation elements */
+  nav,
+  .hamburger-menu,
+  button,
+  [role='navigation'],
+  header {
+    display: none !important;
+  }
+
+  /* Full-width recipe content */
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 1in !important;
+  }
+
+  /* Recipe content optimization */
+  article {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Typography for readability on paper */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 0.5in;
+    font-weight: bold;
+    page-break-after: avoid;
+  }
+
+  h2,
+  h3 {
+    font-size: 16pt;
+    margin-top: 0.25in;
+    margin-bottom: 0.1in;
+    page-break-after: avoid;
+  }
+
+  /* Prevent breaks inside lists */
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+
+  li {
+    page-break-inside: avoid;
+  }
+
+  /* Remove shadows and backgrounds (ink saving) */
+  * {
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  /* Keep essential separators for readability */
+  hr {
+    border-top: 1px solid #000 !important;
+    margin: 0.25in 0;
+  }
+
+  /* Print links without underlines or URL display */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a[href]:after {
+    content: none !important;
+  }
+}
