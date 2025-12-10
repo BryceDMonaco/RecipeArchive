@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from '@/pages/HomePage';
-import { RecipeDetailPage } from '@/pages/RecipeDetailPage';
+import RecipeDetailPage from '@/pages/RecipeDetailPage';
 import userEvent from '@testing-library/user-event';
 import { RecipeList } from '@/components/recipe/RecipeList';
 import { RecipeMetadata } from '@/types/recipe';
