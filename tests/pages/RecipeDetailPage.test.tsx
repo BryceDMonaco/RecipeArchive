@@ -29,7 +29,7 @@ describe('RecipeDetailPage Component', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('Loading recipe...')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toBeInTheDocument();
   });
 
   it('should display recipe content after loading', async () => {

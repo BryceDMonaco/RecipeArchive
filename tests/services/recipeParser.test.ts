@@ -61,7 +61,7 @@ Content`;
 
     const result = parseRecipeFile(markdown, 'chocolate-chip-cookies.md');
 
-    expect(result.title).toBe('chocolate chip cookies');
+    expect(result.title).toBe('Chocolate Chip Cookies');
     expect(result.tags).toEqual([]);
     expect(result.slug).toBe('chocolate-chip-cookies');
   });
@@ -85,7 +85,7 @@ Content`;
 
     const result = parseRecipeFile(markdown, 'my-recipe.md');
 
-    expect(result.title).toBe('my recipe');
+    expect(result.title).toBe('My Recipe');
   });
 
   it('generates slug from full file path', () => {

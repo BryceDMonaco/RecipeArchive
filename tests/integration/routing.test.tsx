@@ -85,7 +85,7 @@ describe('Routing Integration Tests', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('Loading recipe...')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toBeInTheDocument();
   });
 
   it('should correctly extract recipe slug from URL', () => {
@@ -98,6 +98,6 @@ describe('Routing Integration Tests', () => {
     );
 
     // Should show loading initially, then error for non-existent recipe
-    expect(screen.getByText('Loading recipe...')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toBeInTheDocument();
   });
 });
