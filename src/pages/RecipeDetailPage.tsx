@@ -8,7 +8,7 @@ import { ErrorMessage } from '@/components/ui/ErrorMessage';
 import { Button } from '@/components/ui/button';
 import logger from '@/utils/logger';
 
-export function RecipeDetailPage() {
+function RecipeDetailPage() {
   const { recipeSlug } = useParams<{ recipeSlug: string }>();
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState<Recipe | null>(null);
@@ -69,3 +69,5 @@ export function RecipeDetailPage() {
 
   return <RecipeDisplay recipe={recipe} />;
 }
+
+export default RecipeDetailPage;
