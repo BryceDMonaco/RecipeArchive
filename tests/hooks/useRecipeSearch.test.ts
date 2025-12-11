@@ -25,6 +25,20 @@ const mockRecipes: SearchableRecipeMetadata[] = [
     tags: ['salad', 'vegetarian', 'healthy'],
     content: '## Ingredients\n- lettuce\n- tomatoes\n- feta cheese',
   },
+  {
+    filename: 'banana-bread.md',
+    slug: 'banana-bread',
+    title: 'Banana Bread',
+    tags: ['baking', 'breakfast', 'dessert'],
+    content: '## Ingredients\n- 3 ripe bananas\n- 1/3 cup melted butter\n- 3/4 cup sugar',
+  },
+  {
+    filename: 'chicken-stir-fry.md',
+    slug: 'chicken-stir-fry',
+    title: 'Chicken Stir Fry',
+    tags: ['dinner', 'asian', 'quick', 'healthy'],
+    content: '## Ingredients\n- 1 lb chicken breast\n- 2 tbsp soy sauce\n- vegetables',
+  },
 ];
 
 describe('useRecipeSearch Hook', () => {
@@ -149,5 +163,46 @@ describe('useRecipeSearch Hook', () => {
     expect(result.current.filteredRecipes[0].title).toBe(
       'Chocolate Chip Cookies'
     );
+  });
+
+  // Story 4.5: Search Accuracy Tests
+  it('should return only recipes with "asian" tag when searching "asian"', () => {
+    const { result } = renderHook(() => useRecipeSearch(mockRecipes));
+
+    act(() => {
+      result.current.setSearchQuery('asian');
+    });
+
+    expect(result.current.filteredRecipes).toHaveLength(1);
+    expect(result.current.filteredRecipes[0].slug).toBe('chicken-stir-fry');
+    expect(result.current.filteredRecipes[0].tags).toContain('asian');
+  });
+
+  it('should return only recipes with "bread" in title when searching "bread"', () => {
+    const { result } = renderHook(() => useRecipeSearch(mockRecipes));
+
+    act(() => {
+      result.current.setSearchQuery('bread');
+    });
+
+    expect(result.current.filteredRecipes).toHaveLength(1);
+    expect(result.current.filteredRecipes[0].slug).toBe('banana-bread');
+    expect(result.current.filteredRecipes[0].title).toContain('Bread');
+  });
+
+  it('should not return all recipes for specific search terms', () => {
+    const { result } = renderHook(() => useRecipeSearch(mockRecipes));
+
+    // Test that "asian" doesn't return all 5 recipes
+    act(() => {
+      result.current.setSearchQuery('asian');
+    });
+    expect(result.current.filteredRecipes.length).toBeLessThan(mockRecipes.length);
+
+    // Test that "bread" doesn't return all 5 recipes
+    act(() => {
+      result.current.setSearchQuery('bread');
+    });
+    expect(result.current.filteredRecipes.length).toBeLessThan(mockRecipes.length);
   });
 });
