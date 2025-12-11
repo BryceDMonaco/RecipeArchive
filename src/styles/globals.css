@@ -70,6 +70,13 @@
 
 /* Print Styles */
 @media print {
+  /* Enable multi-page printing */
+  html,
+  body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
   /* Hide UI chrome and navigation elements */
   nav,
   .hamburger-menu,
@@ -85,12 +92,16 @@
     max-width: 100% !important;
     margin: 0 !important;
     padding: 1in !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   /* Recipe content optimization */
   article {
     width: 100% !important;
     max-width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
   }
 
   /* Typography for readability on paper */
