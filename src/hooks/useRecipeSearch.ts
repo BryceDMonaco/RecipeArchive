@@ -8,9 +8,9 @@ const fuseOptions: IFuseOptions<SearchableRecipeMetadata> = {
     { name: 'tags', weight: 0.3 },
     { name: 'content', weight: 0.2 },
   ],
-  threshold: 0.4,
+  threshold: 0.3,
   ignoreLocation: true,
-  minMatchCharLength: 2,
+  minMatchCharLength: 3,
 };
 
 export function useRecipeSearch(recipes: SearchableRecipeMetadata[]) {

@@ -39,8 +39,8 @@ function RecipeListItem({ recipe }: RecipeListItemProps) {
   return (
     <Link to={`/recipe/${recipe.slug}`}>
       <Card
-        className={`p-3 hover:bg-gray-50 cursor-pointer transition-colors ${
-          isActive ? 'bg-blue-50 border-blue-300' : ''
+        className={`p-3 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors ${
+          isActive ? 'bg-blue-50 border-blue-300 dark:bg-blue-950 dark:border-blue-700' : ''
         }`}
       >
         <h3 className="font-medium text-sm">{recipe.title}</h3>
@@ -49,7 +49,7 @@ function RecipeListItem({ recipe }: RecipeListItemProps) {
             {recipe.tags.map(tag => (
               <span
                 key={tag}
-                className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full"
+                className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300 rounded-full"
               >
                 {tag}
               </span>

@@ -26,7 +26,7 @@ export function TagFilter({
   return (
     <div className="p-4 border-b">
       <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm font-medium text-gray-700">Filter by Tags</h3>
+        <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">Filter by Tags</h3>
         {selectedTags.length > 0 && (
           <Button
             variant="ghost"
@@ -47,8 +47,8 @@ export function TagFilter({
               onClick={() => onToggleTag(tag)}
               className={`px-3 py-1 text-xs rounded-full transition-colors ${
                 isSelected
-                  ? 'bg-blue-500 text-white hover:bg-blue-600'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
               }`}
             >
               {tag}
@@ -57,7 +57,7 @@ export function TagFilter({
         })}
       </div>
       {selectedTags.length > 0 && (
-        <p className="text-xs text-gray-500 mt-2">
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
           Showing recipes with{' '}
           {selectedTags.map((tag, i) => (
             <span key={tag}>
