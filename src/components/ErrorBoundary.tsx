@@ -36,19 +36,19 @@ export class ErrorBoundary extends Component<
       return (
         <div className="flex items-center justify-center h-screen">
           <div className="text-center max-w-md p-8">
-            <h2 className="text-2xl font-bold text-red-600 mb-4">
+            <h2 className="text-2xl font-bold text-red-600 dark:text-red-500 mb-4">
               Something went wrong
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               We encountered an error loading this page. Please try refreshing
               or return to the home page.
             </p>
             {import.meta.env.DEV && this.state.error && (
               <details className="mb-6 text-left">
-                <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700">
+                <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
                   Error details
                 </summary>
-                <pre className="mt-2 text-xs bg-gray-100 p-4 rounded overflow-auto">
+                <pre className="mt-2 text-xs bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-4 rounded overflow-auto">
                   {this.state.error.message}
                   {'\n\n'}
                   {this.state.error.stack}

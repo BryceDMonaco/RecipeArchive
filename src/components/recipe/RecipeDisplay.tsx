@@ -19,7 +19,7 @@ export function RecipeDisplay({ recipe }: RecipeDisplayProps) {
     const afterIngredients = parts[2] || '';
 
     return (
-      <article className="prose prose-zinc max-w-3xl pb-24">
+      <article className="prose prose-zinc dark:prose-invert max-w-3xl pb-24">
         <h1>{recipe.title}</h1>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {beforeIngredients}
@@ -39,7 +39,7 @@ export function RecipeDisplay({ recipe }: RecipeDisplayProps) {
 
   // Fallback: current behavior (button at bottom)
   return (
-    <article className="prose prose-zinc max-w-3xl pb-24">
+    <article className="prose prose-zinc dark:prose-invert max-w-3xl pb-24">
       <h1>{recipe.title}</h1>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{recipe.content}</ReactMarkdown>
       <div className="not-prose my-6">
