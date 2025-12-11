@@ -49,7 +49,11 @@ function RecipeListItem({ recipe }: RecipeListItemProps) {
             {recipe.tags.map(tag => (
               <span
                 key={tag}
-                className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300 rounded-full"
+                className={`text-xs px-2 py-0.5 rounded-full ${
+                  tag === 'TEST'
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300'
+                }`}
               >
                 {tag}
               </span>

@@ -1,6 +1,6 @@
 ---
 title: Greek Salad
-tags: salad, vegetarian, healthy, quick, side-dish
+tags: salad, vegetarian, healthy, quick, side-dish, TEST
 ---
 
 ## Ingredients
