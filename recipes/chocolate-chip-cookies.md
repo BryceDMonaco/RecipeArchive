@@ -1,6 +1,6 @@
 ---
 title: Chocolate Chip Cookies
-tags: dessert, baking, quick, vegetarian
+tags: dessert, baking, quick, vegetarian, TEST
 ---
 
 ## Ingredients

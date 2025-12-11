@@ -41,14 +41,19 @@ export function TagFilter({
       <div className="flex flex-wrap gap-2">
         {allTags.map(tag => {
           const isSelected = selectedTags.includes(tag);
+          const isTestTag = tag === 'TEST';
           return (
             <button
               key={tag}
               onClick={() => onToggleTag(tag)}
               className={`px-3 py-1 text-xs rounded-full transition-colors ${
-                isSelected
-                  ? 'bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
+                isTestTag
+                  ? isSelected
+                    ? 'bg-red-700 text-white hover:bg-red-800'
+                    : 'bg-red-600 text-white hover:bg-red-700'
+                  : isSelected
+                    ? 'bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
               }`}
             >
               {tag}
