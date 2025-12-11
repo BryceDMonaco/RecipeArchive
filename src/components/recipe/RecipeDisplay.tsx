@@ -9,7 +9,7 @@ interface RecipeDisplayProps {
 
 export function RecipeDisplay({ recipe }: RecipeDisplayProps) {
   return (
-    <article className="prose prose-zinc max-w-3xl">
+    <article className="prose prose-zinc max-w-3xl pb-24">
       <h1>{recipe.title}</h1>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{recipe.content}</ReactMarkdown>
       <div className="not-prose my-6">
