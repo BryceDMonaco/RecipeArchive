@@ -14,10 +14,12 @@ export function TagFilter({
   onToggleTag,
   onClearFilters,
 }: TagFilterProps) {
-  // Extract all unique tags from recipes
+  // Extract all unique tags from recipes, excluding TEST tags
   const allTags = Array.from(
     new Set(recipes.flatMap(recipe => recipe.tags))
-  ).sort();
+  )
+    .filter(tag => tag !== 'TEST')
+    .sort();
 
   if (allTags.length === 0) {
     return null;
