@@ -1,6 +1,7 @@
 import { Separator } from '@/components/ui/separator';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { useSidebar } from '@/contexts/SidebarContext';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 interface SidebarProps {
   children?: React.ReactNode;
@@ -9,8 +10,9 @@ interface SidebarProps {
 function SidebarContent({ children }: SidebarProps) {
   return (
     <>
-      <div className="flex h-16 items-center border-b px-6">
+      <div className="flex h-16 items-center justify-between border-b px-6">
         <h1 className="text-xl font-bold tracking-tight">Recipe Archive</h1>
+        <ThemeToggle />
       </div>
       <Separator />
       <div className="flex-1 overflow-y-auto p-4">{children}</div>
@@ -28,8 +30,9 @@ export function Sidebar({ children }: SidebarProps) {
         className="hidden md:flex h-screen w-72 lg:w-80 flex-col border-r bg-background"
         aria-label="Recipe navigation"
       >
-        <div className="flex h-16 items-center border-b px-6">
+        <div className="flex h-16 items-center justify-between border-b px-6">
           <h1 className="text-xl font-bold tracking-tight">Recipe Archive</h1>
+          <ThemeToggle />
         </div>
         <Separator />
         <div className="flex-1 overflow-y-auto p-4">{children}</div>

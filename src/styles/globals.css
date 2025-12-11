@@ -70,6 +70,15 @@
 
 /* Print Styles */
 @media print {
+  /* Force light mode for printing (ink-saving) */
+  html {
+    color-scheme: light !important;
+  }
+
+  html.dark {
+    color-scheme: light !important;
+  }
+
   /* Enable multi-page printing */
   html,
   body {
