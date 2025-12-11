@@ -8,7 +8,7 @@ const fuseOptions: IFuseOptions<SearchableRecipeMetadata> = {
     { name: 'tags', weight: 0.3 },
     { name: 'content', weight: 0.2 },
   ],
-  threshold: 0.3,
+  threshold: 0.15,  // Balanced: strict enough for accuracy, lenient enough for typos
   ignoreLocation: true,
   minMatchCharLength: 3,
 };
