@@ -5,9 +5,9 @@ tags: pasta, seafood, shrimp, one-pot, quick
 
 ## Ingredients
 
-- 8 oz linguine
+- 16 oz linguine
 - 2 tablespoons olive oil
-- 8 tablespoons unsalted butter (1 stick)
+- 4 tablespoons unsalted butter (1/2 stick)
 - 4 cloves garlic, minced
 - 1 teaspoon red pepper flakes
 - 1 1/4 lb large shrimp
@@ -31,6 +31,8 @@ tags: pasta, seafood, shrimp, one-pot, quick
 8. Serve while hot.
 
 ## Notes
+
+Modified to use half the amount of butter, double the amount of pasta.
 
 ## Source
 

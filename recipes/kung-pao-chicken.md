@@ -32,6 +32,8 @@ tags: chinese, chicken, slow-cooker, spicy, meal-prep
 - 2 tablespoons cornstarch
 - 3 tablespoons water
 
+See notes section for lunch meal preparation.
+
 ## Instructions
 
 1. Coat chicken with cornstarch, salt, and pepper in a bowl or bag.
@@ -44,6 +46,8 @@ tags: chinese, chicken, slow-cooker, spicy, meal-prep
 8. Garnish with sesame seeds and green onions; serve over rice or noodles.
 
 ## Notes
+
+For lunches, I doubled the recipe (12 servings on the original site, made into 8 lunches) and used 3 lbs chicken, doubled the water used in the corn starch slurry, used red pepper flakes in place of dried peppers, slow cooked on high for 2.5 hr then 0.5 hr.
 
 ## Source
 
