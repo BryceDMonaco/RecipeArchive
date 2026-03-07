@@ -8,14 +8,14 @@ DONE - https://britneybreaksbread.com/slow-cooker-baby-back-ribs/
 DONE - https://pamelasalzman.com/stracotto-di-manzo/
 DONE - https://damndelicious.net/2020/01/25/homestyle-chicken-noodle-soup/
 DONE - https://www.yellowblissroad.com/authentic-mexican-rice/
-FAILED (couldn't extract recipe content) - https://www.budgetbytes.com/chorizo-sweet-potato-chili/
-FAILED (couldn't extract recipe content) - https://foodtasia.com/chicken-with-sun-dried-tomato-mushroom-cream-sauce/
-FAILED (couldn't extract recipe content) - https://sweetpeasandsaffron.com/honey-sesame-chicken-lunch-bowls/
-FAILED (couldn't extract recipe content) - https://cookieandkate.com/creamy-cherry-tomato-summer-squash-pasta/
-FAILED (couldn't extract recipe content) - https://preppykitchen.com/peanut-butter-cookies-recipe/
-FAILED (site blocked) - https://www.delish.com/cooking/recipe-ideas/recipes/a46758/tuscan-spaghetti-squash-recipe/
-FAILED (site blocked) - https://www.delish.com/cooking/recipe-ideas/a30615986/slow-cooker-chicken-tinga-tacos-recipe/
-FAILED (site blocked) - https://www.thepioneerwoman.com/food-cooking/recipes/a9594/christmas-rum-cake/
-FAILED (403 forbidden) - https://www.foodnetwork.com/recipes/food-network-kitchen/copycat-zuppa-toscana-5565099.amp
-FAILED (403 forbidden) - https://www.foodnetwork.com/recipes/ina-garten/turkey-lasagna-recipe2-1916662
-FAILED (404 not found) - https://www.thechoppingblock.com/blog/cheese-sauce-2.0-sodium-citrate?hs_amp=true
+DONE - https://www.budgetbytes.com/chorizo-sweet-potato-chili/
+DONE - https://foodtasia.com/chicken-with-sun-dried-tomato-mushroom-cream-sauce/
+DONE - https://sweetpeasandsaffron.com/honey-sesame-chicken-lunch-bowls/
+DONE - https://cookieandkate.com/creamy-cherry-tomato-summer-squash-pasta/
+DONE - https://preppykitchen.com/peanut-butter-cookies-recipe/
+DONE - https://www.delish.com/cooking/recipe-ideas/recipes/a46758/tuscan-spaghetti-squash-recipe/
+DONE - https://www.delish.com/cooking/recipe-ideas/a30615986/slow-cooker-chicken-tinga-tacos-recipe/
+DONE - https://www.thepioneerwoman.com/food-cooking/recipes/a9594/christmas-rum-cake/
+DONE - https://www.foodnetwork.com/recipes/food-network-kitchen/copycat-zuppa-toscana-5565099.amp
+DONE - https://www.foodnetwork.com/recipes/ina-garten/turkey-lasagna-recipe2-1916662
+DONE - https://www.thechoppingblock.com/blog/cheese-sauce-2.0-sodium-citrate?hs_amp=true
