@@ -51,36 +51,63 @@ function generateRecipeManifest(recipesDir: string): SearchableRecipeMetadata[] 
     return [];
   }
 
+  const manifest: SearchableRecipeMetadata[] = [];
+  const isTestMode = process.env.NODE_ENV === 'test' || process.env.VITEST;
+
+  // Scan main recipes directory
   const files = fs.readdirSync(recipesDir);
-  const recipeFiles = files.filter(file => file.endsWith('.md'));
+  const recipeFiles = files.filter(file => file.endsWith('.md') && file !== 'TEMPLATE.md');
 
-  const manifest: SearchableRecipeMetadata[] = recipeFiles.map(filename => {
-    const filePath = path.join(recipesDir, filename);
-    const fileContents = fs.readFileSync(filePath, 'utf-8');
-    const { data, content } = matter(fileContents);
-
-    // Extract slug from filename
-    const slug = filename.replace('.md', '');
-
-    // Parse tags (handle both string and array formats)
-    let tags: string[] = [];
-    if (typeof data.tags === 'string') {
-      tags = data.tags.split(',').map(tag => tag.trim());
-    } else if (Array.isArray(data.tags)) {
-      tags = data.tags;
+  for (const filename of recipeFiles) {
+    const recipe = parseRecipeFile(recipesDir, filename);
+    if (recipe) {
+      manifest.push(recipe);
     }
+  }
 
-    return {
-      filename,
-      slug,
-      title: data.title || slug,
-      tags,
-      content: content.trim(),
-    };
-  });
+  // Also scan test_recipes subdirectory only in test mode
+  if (isTestMode) {
+    const testRecipesDir = path.join(recipesDir, 'test_recipes');
+    if (fs.existsSync(testRecipesDir)) {
+      const testFiles = fs.readdirSync(testRecipesDir);
+      const testRecipeFiles = testFiles.filter(file => file.endsWith('.md') && file !== 'TEMPLATE.md');
+
+      for (const filename of testRecipeFiles) {
+        const recipe = parseRecipeFile(testRecipesDir, filename, 'test_recipes/');
+        if (recipe) {
+          manifest.push(recipe);
+        }
+      }
+    }
+  }
 
   // Sort alphabetically by title
   manifest.sort((a, b) => a.title.localeCompare(b.title));
 
   return manifest;
+}
+
+function parseRecipeFile(dir: string, filename: string, subdir: string = ''): SearchableRecipeMetadata | null {
+  const filePath = path.join(dir, filename);
+  const fileContents = fs.readFileSync(filePath, 'utf-8');
+  const { data, content } = matter(fileContents);
+
+  // Extract slug from filename
+  const slug = filename.replace('.md', '');
+
+  // Parse tags (handle both string and array formats)
+  let tags: string[] = [];
+  if (typeof data.tags === 'string') {
+    tags = data.tags.split(',').map(tag => tag.trim());
+  } else if (Array.isArray(data.tags)) {
+    tags = data.tags;
+  }
+
+  return {
+    filename: subdir + filename,
+    slug,
+    title: data.title || slug,
+    tags,
+    content: content.trim(),
+  };
 }
