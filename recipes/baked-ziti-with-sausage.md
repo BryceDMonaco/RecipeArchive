@@ -8,7 +8,7 @@ tags: pasta, italian, baked, sausage, casserole
 - 1 lb ziti noodles
 - 2 lbs ground spicy or sweet Italian sausage
 - 4 cloves garlic, minced
-- 1 (28-oz) can crushed tomatoes (blended San Marizano)
+- 1 (28-oz) can crushed tomatoes (blended San Marzano)
 - 1 teaspoon salt
 - 1 1/2 teaspoons sugar
 - 1/4 teaspoon crushed red pepper flakes
