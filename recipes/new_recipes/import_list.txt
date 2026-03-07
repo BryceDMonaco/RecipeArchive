@@ -1,0 +1,21 @@
+FAILED (couldn't extract recipe content) - https://www.budgetbytes.com/chorizo-sweet-potato-chili/
+FAILED (site blocked) - https://www.delish.com/cooking/recipe-ideas/recipes/a46758/tuscan-spaghetti-squash-recipe/
+FAILED (couldn't extract recipe content) - https://foodtasia.com/chicken-with-sun-dried-tomato-mushroom-cream-sauce/
+FAILED (403 forbidden) - https://www.foodnetwork.com/recipes/food-network-kitchen/copycat-zuppa-toscana-5565099.amp
+DONE - https://tasty.co/recipe/one-pot-lemon-garlic-shrimp-pasta
+FAILED (couldn't extract recipe content) - https://sweetpeasandsaffron.com/honey-sesame-chicken-lunch-bowls/
+DONE - https://www.cookingclassy.com/penne-alla-vodka-sauce/
+DONE - https://thewanderlustkitchen.com/homemade-german-spaetzle/
+FAILED (couldn't extract recipe content) - https://cookieandkate.com/creamy-cherry-tomato-summer-squash-pasta/
+FAILED (site blocked) - https://www.delish.com/cooking/recipe-ideas/a30615986/slow-cooker-chicken-tinga-tacos-recipe/
+FAILED (403 forbidden) - https://www.foodnetwork.com/recipes/ina-garten/turkey-lasagna-recipe2-1916662
+DONE - https://www.onceuponachef.com/recipes/baked-ziti-with-sausage.html
+DONE - https://amateurprochef.com/2024/08/09/the-best-butter-chicken/
+FAILED (404 not found) - https://www.thechoppingblock.com/blog/cheese-sauce-2.0-sodium-citrate?hs_amp=true
+FAILED (couldn't extract recipe content) - https://preppykitchen.com/peanut-butter-cookies-recipe/
+DONE - https://lifemadesweeter.com/kung-pao-chicken/#wprm-recipe-container-30163
+DONE - https://britneybreaksbread.com/slow-cooker-baby-back-ribs/
+DONE - https://pamelasalzman.com/stracotto-di-manzo/
+DONE - https://damndelicious.net/2020/01/25/homestyle-chicken-noodle-soup/
+DONE - https://www.yellowblissroad.com/authentic-mexican-rice/
+FAILED (site blocked) - https://www.thepioneerwoman.com/food-cooking/recipes/a9594/christmas-rum-cake/
