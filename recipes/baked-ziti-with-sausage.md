@@ -6,9 +6,9 @@ tags: pasta, italian, baked, sausage, casserole
 ## Ingredients
 
 - 1 lb ziti noodles
-- 1 1/2 lbs ground spicy or sweet Italian sausage
+- 2 lbs ground spicy or sweet Italian sausage
 - 4 cloves garlic, minced
-- 1 (28-oz) can crushed tomatoes
+- 1 (28-oz) can crushed tomatoes (blended San Marizano)
 - 1 teaspoon salt
 - 1 1/2 teaspoons sugar
 - 1/4 teaspoon crushed red pepper flakes
@@ -16,6 +16,7 @@ tags: pasta, italian, baked, sausage, casserole
 - 1/3 cup plus 3 tablespoons grated pecorino Romano (or Parmigiano Reggiano), divided
 - 1/3 cup chopped fresh basil, plus more for serving
 - 8 oz whole milk mozzarella cheese, shredded (about 2 cups)
+- 2 oz goat cheese
 
 ## Instructions
 
@@ -29,6 +30,8 @@ tags: pasta, italian, baked, sausage, casserole
 8. Bake uncovered for 15-20 minutes until cheese melts and browns. Garnish with additional basil before serving.
 
 ## Notes
+
+Modified to add goat cheese and to blend tomatoes for smoother sauce.
 
 ## Source
 

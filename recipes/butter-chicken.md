@@ -38,7 +38,7 @@ tags: indian, chicken, curry, creamy
 4. Roughly chop red onion and tomatoes.
 5. Heat 2 tbsp oil in a pan; saute minced garlic and onions until golden.
 6. Add tomatoes, cover with water, and cook 4-5 minutes until softened.
-7. Add curry spices and blend mixture until smooth.
+7. Add curry spices and blend mixture until smooth. Salt to taste.
 8. Return sauce to pan; stir in sugar, fenugreek leaves, and cream.
 9. Add cooked chicken and simmer briefly to combine flavors; serve.
 

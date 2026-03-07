@@ -13,9 +13,9 @@ tags: ribs, bbq, slow-cooker, pork
 - 1 tbsp Onion Powder
 - 1 tsp Red Pepper Flakes
 - Salt and Pepper (to taste)
-- 1/3 cup Brown Sugar
+- 1/4 cup Brown Sugar
 - 2 cups BBQ Sauce
-- 1/3 cup Apple Cider Vinegar
+- 1/4 cup Apple Cider Vinegar
 - 3 tbsp Worcestershire Sauce
 - 1/4 cup Whiskey (or beef broth for alcohol-free option)
 - 1 slab Baby Back Ribs
@@ -27,9 +27,13 @@ tags: ribs, bbq, slow-cooker, pork
 3. Pour BBQ sauce into the slow cooker along with brown sugar, apple cider vinegar, whiskey, and Worcestershire sauce. Whisk everything together.
 4. Cut the slab of ribs in half. Place half on the bottom of the slow cooker and the other half on top. Spoon sauce over the ribs and cover with the lid.
 5. Cook on low for 6 hours.
-6. Transfer ribs to a foil-lined baking sheet. Coat with remaining BBQ sauce/braising liquid from the crockpot. Broil in the oven for 3-5 minutes on the middle rack, watching carefully to prevent burning.
+6. Transfer ribs to a foil-lined baking sheet. Coat with remaining BBQ sauce/braising liquid from the crockpot. Broil in the oven for 6-7 minutes on the middle rack, watching carefully to prevent burning.
 
 ## Notes
+
+If there is sauce left over in the sauce bottle, add some ACV and shake with the lid on.
+
+Modified to use less brown sugar and ACV and to increase final broil time.
 
 ## Source
 
