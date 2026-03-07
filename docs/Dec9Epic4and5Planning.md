@@ -32,6 +32,13 @@ be found.
 
 The following are plans for epic 5:
 
+1. Add the ability to collapse/expand the tag list in the sidebar, it should be collapsed by default
+2. Consolidate tags, maybe make a list of common tags so new and old recipes all take from the same pool
+3. Add an info page explaining this is a personal project and original recipes are property of the respective sources.
+4. Disable in development banner
+
+The following are plans for a later epic:
+
 1. The ability to select multiple recipes from the sidebar, copy all of their 
 ingredients at once (same ingredients will be summed, i.e. if recipe A has 1 cup 
 flour and B has 2.5, copying ingredients will have one line with 3.5 cups flour), 
