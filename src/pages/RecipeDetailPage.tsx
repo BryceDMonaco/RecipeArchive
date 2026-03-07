@@ -27,16 +27,26 @@ function RecipeDetailPage() {
         setLoading(true);
         setError(null);
 
-        // Dynamically import the recipe markdown file
-        const recipeModule = await import(
-          `../../recipes/${recipeSlug}.md?raw`
-        );
-        const content = recipeModule.default;
+        // Try loading from main recipes directory first, then test_recipes
+        let content: string;
+        let recipePath: string;
 
-        const parsedRecipe = parseRecipeFile(
-          content,
-          `recipes/${recipeSlug}.md`
-        );
+        try {
+          const recipeModule = await import(
+            `../../recipes/${recipeSlug}.md?raw`
+          );
+          content = recipeModule.default;
+          recipePath = `recipes/${recipeSlug}.md`;
+        } catch {
+          // Try test_recipes subdirectory
+          const recipeModule = await import(
+            `../../recipes/test_recipes/${recipeSlug}.md?raw`
+          );
+          content = recipeModule.default;
+          recipePath = `recipes/test_recipes/${recipeSlug}.md`;
+        }
+
+        const parsedRecipe = parseRecipeFile(content, recipePath);
 
         setRecipe(parsedRecipe);
       } catch (err) {

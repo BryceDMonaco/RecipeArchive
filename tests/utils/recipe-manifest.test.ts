@@ -37,7 +37,7 @@ describe('Recipe Manifest Generation', () => {
   });
 
   it('should generate correct slug from filename', () => {
-    const carbonaraRecipe = recipeManifest.find(r => r.filename === 'spaghetti-carbonara.md');
+    const carbonaraRecipe = recipeManifest.find(r => r.filename === 'test_recipes/spaghetti-carbonara.md');
     expect(carbonaraRecipe).toBeDefined();
     if (carbonaraRecipe) {
       expect(carbonaraRecipe.slug).toBe('spaghetti-carbonara');
