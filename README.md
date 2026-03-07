@@ -107,3 +107,7 @@ The site automatically deploys to GitHub Pages via GitHub Actions on every push 
 ## License
 
 Private personal project.
+
+## Attribution
+
+Favicon by Andy Horvath via https://www.flaticon.com/authors/andy-horvath
