@@ -1,6 +1,6 @@
 ---
 title: Chicken Stir Fry
-tags: dinner, asian, quick, healthy, TEST
+tags: asian, chicken, quick, TEST
 ---
 
 ## Ingredients

@@ -1,6 +1,6 @@
 ---
 title: Turkey Lasagna
-tags: italian, pasta, lasagna, turkey, baked
+tags: italian, pasta, turkey
 ---
 
 ## Ingredients

@@ -1,6 +1,6 @@
 ---
 title: One-Pot Lemon Garlic Shrimp Pasta
-tags: pasta, seafood, shrimp, one-pot, quick
+tags: pasta, seafood, one-pot, quick
 ---
 
 ## Ingredients

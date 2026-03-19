@@ -1,6 +1,6 @@
 ---
 title: Kelly's Spicy Pizza Sauce
-tags: sauce, pizza, spicy, italian
+tags: italian, sauce
 ---
 
 ## Ingredients

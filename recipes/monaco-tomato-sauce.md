@@ -1,6 +1,6 @@
 ---
 title: Monaco Tomato Sauce
-tags: italian, sauce, tomato, base
+tags: italian, sauce
 ---
 
 ## Ingredients

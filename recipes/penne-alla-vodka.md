@@ -1,6 +1,6 @@
 ---
 title: Penne alla Vodka
-tags: pasta, italian, vodka-sauce, penne
+tags: pasta, italian
 ---
 
 ## Ingredients

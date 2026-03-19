@@ -1,6 +1,6 @@
 ---
 title: Neapolitan Pizza Dough
-tags: italian, pizza, dough, bread, fermented
+tags: italian, baking
 ---
 
 ## Ingredients

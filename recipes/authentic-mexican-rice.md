@@ -1,6 +1,6 @@
 ---
 title: Authentic Mexican Rice
-tags: mexican, rice, side-dish
+tags: mexican, side-dish
 ---
 
 ## Ingredients

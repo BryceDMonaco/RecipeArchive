@@ -1,6 +1,6 @@
 ---
 title: Honey Sesame Chicken Lunch Bowls
-tags: chicken, asian, meal-prep, honey, sesame
+tags: asian, chicken, meal-prep
 ---
 
 ## Ingredients

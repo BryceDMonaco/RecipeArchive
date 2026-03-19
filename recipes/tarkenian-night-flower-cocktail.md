@@ -1,6 +1,6 @@
 ---
 title: Tarkenian Night Flower Cocktail
-tags: cocktail, drink, huckleberry, gin
+tags: cocktail
 ---
 
 ## Ingredients

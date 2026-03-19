@@ -1,6 +1,6 @@
 ---
 title: Homestyle Chicken Noodle Soup
-tags: soup, chicken, comfort-food, classic
+tags: soup, chicken
 ---
 
 ## Ingredients

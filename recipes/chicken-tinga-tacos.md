@@ -1,6 +1,6 @@
 ---
 title: Chicken Tinga Tacos
-tags: mexican, chicken, tacos, slow-cooker, spicy
+tags: mexican, chicken, slow-cooker
 ---
 
 ## Ingredients

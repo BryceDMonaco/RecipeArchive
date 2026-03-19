@@ -1,6 +1,6 @@
 ---
 title: Carbonara
-tags: italian, pasta, bacon, egg, quick
+tags: italian, pasta, pork, quick
 ---
 
 ## Ingredients

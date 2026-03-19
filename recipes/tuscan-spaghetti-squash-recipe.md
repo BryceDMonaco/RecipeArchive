@@ -1,6 +1,6 @@
 ---
 title: Tuscan Spaghetti Squash
-tags: italian, spaghetti-squash, sausage, low-carb
+tags: italian, pork
 ---
 
 ## Ingredients

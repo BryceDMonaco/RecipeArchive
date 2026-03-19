@@ -1,6 +1,6 @@
 ---
 title: Homemade German Spaetzle
-tags: german, pasta, dumplings, side-dish, egg-noodles
+tags: german, pasta, side-dish
 ---
 
 ## Ingredients

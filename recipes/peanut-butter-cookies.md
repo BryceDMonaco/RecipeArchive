@@ -1,6 +1,6 @@
 ---
 title: Peanut Butter Cookies
-tags: dessert, cookies, peanut-butter, baking
+tags: dessert, baking
 ---
 
 ## Ingredients

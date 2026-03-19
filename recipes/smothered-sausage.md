@@ -1,6 +1,6 @@
 ---
 title: Smothered Sausage
-tags: italian, sausage, pork, stovetop, dinner
+tags: italian, pork
 ---
 
 ## Ingredients

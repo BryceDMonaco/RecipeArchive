@@ -1,6 +1,6 @@
 ---
 title: Chorizo Sweet Potato Chili
-tags: mexican, chili, chorizo, sweet-potato, one-pot
+tags: mexican, pork, one-pot
 ---
 
 ## Ingredients

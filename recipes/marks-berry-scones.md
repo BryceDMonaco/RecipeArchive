@@ -1,6 +1,6 @@
 ---
 title: Mark's Berry Scones
-tags: dessert, breakfast, scones, berries, baking
+tags: dessert, breakfast, baking
 ---
 
 ## Ingredients

@@ -1,6 +1,6 @@
 ---
 title: Butter Chicken
-tags: indian, chicken, curry, creamy
+tags: indian, chicken
 ---
 
 ## Ingredients

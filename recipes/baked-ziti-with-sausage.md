@@ -1,6 +1,6 @@
 ---
 title: Baked Ziti with Sausage
-tags: pasta, italian, baked, sausage, casserole
+tags: pasta, italian, pork
 ---
 
 ## Ingredients

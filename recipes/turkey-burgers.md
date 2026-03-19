@@ -1,6 +1,6 @@
 ---
 title: Turkey Burgers
-tags: turkey, burgers, grilling, meal-prep
+tags: turkey, meal-prep
 ---
 
 ## Ingredients

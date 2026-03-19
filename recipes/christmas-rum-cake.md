@@ -1,6 +1,6 @@
 ---
 title: Christmas Rum Cake
-tags: dessert, cake, rum, christmas, holiday
+tags: dessert, holiday, baking
 ---
 
 ## Ingredients

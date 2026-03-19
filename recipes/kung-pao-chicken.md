@@ -1,6 +1,6 @@
 ---
 title: Slow Cooker Kung Pao Chicken
-tags: chinese, chicken, slow-cooker, spicy, meal-prep
+tags: asian, chicken, slow-cooker, meal-prep
 ---
 
 ## Ingredients

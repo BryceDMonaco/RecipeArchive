@@ -1,6 +1,6 @@
 ---
 title: Creamy Cherry Tomato Summer Squash Pasta
-tags: pasta, vegetarian, summer, squash, tomato
+tags: pasta, vegetarian
 ---
 
 ## Ingredients

@@ -1,6 +1,6 @@
 ---
 title: Spaghetti Carbonara
-tags: pasta, dinner, italian, quick, TEST
+tags: pasta, italian, quick, TEST
 ---
 
 ## Ingredients

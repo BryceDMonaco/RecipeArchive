@@ -1,6 +1,6 @@
 ---
 title: Slow Cooker Baby Back Ribs
-tags: ribs, bbq, slow-cooker, pork
+tags: pork, slow-cooker
 ---
 
 ## Ingredients

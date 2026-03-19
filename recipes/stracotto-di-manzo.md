@@ -1,6 +1,6 @@
 ---
 title: Stracotto di Manzo (Beef Braised in Red Wine)
-tags: italian, beef, braised, slow-cooked, wine
+tags: italian, beef, slow-cooker
 ---
 
 ## Ingredients

@@ -1,6 +1,6 @@
 ---
 title: Zuppa Toscana
-tags: italian, soup, sausage, potato, kale
+tags: italian, soup, pork
 ---
 
 ## Ingredients

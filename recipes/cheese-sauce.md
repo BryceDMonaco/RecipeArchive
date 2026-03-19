@@ -1,6 +1,6 @@
 ---
 title: Cheese Sauce with Sodium Citrate
-tags: sauce, cheese, side-dish
+tags: sauce
 ---
 
 ## Ingredients

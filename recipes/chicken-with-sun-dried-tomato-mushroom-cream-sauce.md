@@ -1,6 +1,6 @@
 ---
 title: Chicken with Sun Dried Tomato Mushroom Cream Sauce
-tags: chicken, creamy, mushroom, sun-dried-tomato, italian
+tags: italian, chicken
 ---
 
 ## Ingredients
