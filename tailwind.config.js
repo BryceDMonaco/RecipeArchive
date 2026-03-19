@@ -38,6 +38,12 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        selected: {
+          DEFAULT: 'hsl(var(--selected))',
+          hover: 'hsl(var(--selected-hover))',
+          subtle: 'hsl(var(--selected-subtle))',
+          border: 'hsl(var(--selected-border))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

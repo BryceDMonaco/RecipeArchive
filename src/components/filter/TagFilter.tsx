@@ -41,7 +41,7 @@ export function TagFilter({
           />
           Filter by Tags
           {selectedTags.length > 0 && (
-            <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-blue-500 text-white">
+            <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-selected text-white">
               {selectedTags.length}
             </span>
           )}
@@ -73,7 +73,7 @@ export function TagFilter({
                         ? 'bg-red-700 text-white hover:bg-red-800'
                         : 'bg-red-600 text-white hover:bg-red-700'
                       : isSelected
-                        ? 'bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700'
+                        ? 'bg-selected text-white hover:bg-selected-hover'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
                   }`}
                 >

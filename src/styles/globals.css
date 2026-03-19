@@ -24,6 +24,10 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
+    --selected: 130 100% 31%;
+    --selected-hover: 130 100% 24%;
+    --selected-subtle: 130 100% 97%;
+    --selected-border: 130 100% 31%;
   }
 
   .dark {
@@ -46,6 +50,10 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    --selected: 130 100% 31%;
+    --selected-hover: 130 100% 24%;
+    --selected-subtle: 130 100% 8%;
+    --selected-border: 130 100% 31%;
   }
 }
 

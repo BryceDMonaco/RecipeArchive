@@ -40,7 +40,7 @@ function RecipeListItem({ recipe }: RecipeListItemProps) {
     <Link to={`/recipe/${recipe.slug}`}>
       <Card
         className={`p-3 hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors ${
-          isActive ? 'bg-blue-50 border-blue-300 dark:bg-blue-950 dark:border-blue-700' : ''
+          isActive ? 'bg-selected-subtle border-selected-border' : ''
         }`}
       >
         <h3 className="font-medium text-sm">{recipe.title}</h3>
