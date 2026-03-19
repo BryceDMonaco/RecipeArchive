@@ -26,7 +26,8 @@ const mockRecipes: RecipeMetadata[] = [
 ];
 
 describe('TagFilter Component', () => {
-  it('should render all unique tags', () => {
+  it('should render all unique tags', async () => {
+    const user = userEvent.setup();
     render(
       <TagFilter
         recipes={mockRecipes}
@@ -36,13 +37,16 @@ describe('TagFilter Component', () => {
       />
     );
 
+    await user.click(screen.getByText('Filter by Tags'));
+
     expect(screen.getByText('dessert')).toBeInTheDocument();
     expect(screen.getByText('baking')).toBeInTheDocument();
     expect(screen.getByText('pasta')).toBeInTheDocument();
     expect(screen.getByText('vegetarian')).toBeInTheDocument();
   });
 
-  it('should render tags alphabetically', () => {
+  it('should render tags alphabetically', async () => {
+    const user = userEvent.setup();
     const { container } = render(
       <TagFilter
         recipes={mockRecipes}
@@ -51,6 +55,8 @@ describe('TagFilter Component', () => {
         onClearFilters={() => {}}
       />
     );
+
+    await user.click(screen.getByText('Filter by Tags'));
 
     const tagButtons = Array.from(
       container.querySelectorAll('button:not([class*="Clear"])')
@@ -62,7 +68,8 @@ describe('TagFilter Component', () => {
     expect(tagTexts).toEqual(sortedTags);
   });
 
-  it('should highlight selected tags', () => {
+  it('should highlight selected tags', async () => {
+    const user = userEvent.setup();
     const { container } = render(
       <TagFilter
         recipes={mockRecipes}
@@ -71,6 +78,8 @@ describe('TagFilter Component', () => {
         onClearFilters={() => {}}
       />
     );
+
+    await user.click(screen.getByText('Filter by Tags'));
 
     // Get all tag buttons (first set of elements with these texts)
     const tagButtons = container.querySelectorAll('button[class*="px-3"]');
@@ -84,8 +93,8 @@ describe('TagFilter Component', () => {
       btn => btn.textContent === 'pasta'
     );
 
-    expect(dessertButton?.className).toContain('bg-blue-500');
-    expect(quickButton?.className).toContain('bg-blue-500');
+    expect(dessertButton?.className).toContain('bg-selected');
+    expect(quickButton?.className).toContain('bg-selected');
     expect(pastaButton?.className).toContain('bg-gray-100');
   });
 
@@ -101,6 +110,8 @@ describe('TagFilter Component', () => {
         onClearFilters={() => {}}
       />
     );
+
+    await user.click(screen.getByText('Filter by Tags'));
 
     const dessertButton = screen.getByText('dessert');
     await user.click(dessertButton);
@@ -118,7 +129,7 @@ describe('TagFilter Component', () => {
       />
     );
 
-    expect(screen.getByText('Clear filters')).toBeInTheDocument();
+    expect(screen.getByText('Clear')).toBeInTheDocument();
   });
 
   it('should not show clear filters button when no tags selected', () => {
@@ -131,7 +142,7 @@ describe('TagFilter Component', () => {
       />
     );
 
-    expect(screen.queryByText('Clear filters')).not.toBeInTheDocument();
+    expect(screen.queryByText('Clear')).not.toBeInTheDocument();
   });
 
   it('should call onClearFilters when clicking clear button', async () => {
@@ -147,13 +158,14 @@ describe('TagFilter Component', () => {
       />
     );
 
-    const clearButton = screen.getByText('Clear filters');
+    const clearButton = screen.getByText('Clear');
     await user.click(clearButton);
 
     expect(handleClearFilters).toHaveBeenCalled();
   });
 
-  it('should show AND logic description when multiple tags selected', () => {
+  it('should show AND logic description when multiple tags selected', async () => {
+    const user = userEvent.setup();
     render(
       <TagFilter
         recipes={mockRecipes}
@@ -162,6 +174,8 @@ describe('TagFilter Component', () => {
         onClearFilters={() => {}}
       />
     );
+
+    await user.click(screen.getByText('Filter by Tags'));
 
     const description = screen.getByText(/Showing recipes with/);
     expect(description).toBeInTheDocument();

@@ -122,7 +122,7 @@ describe('RecipeList Component', () => {
       </MemoryRouter>
     );
 
-    const activeCard = container.querySelector('[class*="bg-blue-50"]');
+    const activeCard = container.querySelector('[class*="bg-selected-subtle"]');
     expect(activeCard).toBeInTheDocument();
   });
 });
