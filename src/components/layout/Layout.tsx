@@ -1,6 +1,5 @@
 import { Sidebar } from './Sidebar';
 import { MainContent } from './MainContent';
-import { DevBanner } from './DevBanner';
 import { HamburgerMenuButton } from './HamburgerMenuButton';
 import { SidebarProvider } from '@/contexts/SidebarContext';
 
@@ -13,7 +12,6 @@ export function Layout({ sidebar, children }: LayoutProps) {
   return (
     <SidebarProvider>
       <div className="flex h-screen w-full flex-col overflow-hidden">
-        <DevBanner />
         <HamburgerMenuButton />
         <div className="flex flex-1 overflow-hidden">
           <Sidebar>{sidebar}</Sidebar>
