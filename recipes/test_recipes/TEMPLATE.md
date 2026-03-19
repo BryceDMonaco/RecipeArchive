@@ -1,6 +1,6 @@
 ---
 title: {Recipe Title Here}
-tags: category1, category2, dietary-info, cooking-method
+tags: {Choose from the approved tags listed in TAGS.md — do not use tags outside that list}
 ---
 
 ## Ingredients
