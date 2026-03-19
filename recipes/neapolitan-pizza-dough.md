@@ -58,4 +58,4 @@ Dough stretching technique (start at 11:30): https://youtu.be/8Q_9h6VKm9c
 
 ## Source
 
-https://www.vincenzosplate.com/neapolitan-pizza-dough-recipe
+Modified version of https://www.vincenzosplate.com/neapolitan-pizza-dough-recipe
