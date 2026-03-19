@@ -11,6 +11,7 @@ All recipes must use tags exclusively from this list. Do not create new tags wit
 
 ## Protein
 - `chicken`
+- `turkey`
 - `beef`
 - `pork`
 - `seafood`
@@ -23,6 +24,7 @@ All recipes must use tags exclusively from this list. Do not create new tags wit
 - `dessert`
 - `breakfast`
 - `cocktail`
+- `sauce`
 - `side-dish`
 
 ## Method / Style
