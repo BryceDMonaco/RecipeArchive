@@ -1,5 +1,5 @@
 ---
-title: Turkey Burgers
+title: Turkey Burger Patties
 tags: turkey, meal-prep
 ---
 
