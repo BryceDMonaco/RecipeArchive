@@ -11,13 +11,12 @@ tags: dessert, breakfast, baking
 - 4 tbsp melted stick butter
 - 1 tsp vanilla extract
 - 1/2 cup milk
-- Frozen berries (or chocolate chips)
 
 ### Toppings
 - Frozen berries, chocolate chips, or anything else you want!
 
 ### Icing
-- 1 cup confectioners sugar
+- 1 cup confectioners/powdered sugar
 - 1 tbsp milk
 
 ## Instructions
@@ -33,8 +32,8 @@ tags: dessert, breakfast, baking
 9. Press more berries/fruit into this side.
 10. Cut each circle into 8 pie slices.
 11. Place the scones on a greased baking tray.
-12. Bake at 400F for 12 minutes, or sooner if edges are brown or if making a different shape with thin edges.
-13. For the icing, stir together confectioners sugar and milk until you have a thick consistency.
+12. Bake at 400F for 12 minutes (15 minutes if at high elevation) until edges are golden.
+13. For the icing, stir together confectioners sugar and milk until you have a thick consistency.istency.
 14. Drizzle the icing on top of the cooled scones.
 
 ## Notes
