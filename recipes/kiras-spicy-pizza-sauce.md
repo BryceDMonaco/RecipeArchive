@@ -1,5 +1,5 @@
 ---
-title: Kelly's Spicy Pizza Sauce
+title: Kira's Spicy Pizza Sauce
 tags: italian, sauce
 ---
 
@@ -32,4 +32,4 @@ tags: italian, sauce
 
 ## Source
 
-Kelly.
+Kira. Kelly helped.
