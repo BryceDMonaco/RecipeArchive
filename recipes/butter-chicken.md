@@ -39,7 +39,7 @@ tags: indian, chicken
 
 1. Chop chicken breasts into bite-sized cubes.
 2. Combine yogurt and marinade spices; coat chicken and let sit about 1 hour.
-3. Air fry chicken at 380°F for 12 minutes.
+3. Air fry chicken at 380°F for 12 minutes in batches until all chicken is cooked or spread chicken on a greased baking sheet and bake in the oven for 30 minutes at 400°.
 4. Roughly chop red onion and tomatoes.
 5. Heat 2 tbsp oil in a pan; saute minced garlic and onions until golden.
 6. Add tomatoes, add water, and cook covered 4-5 minutes until softened.
